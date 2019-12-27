@@ -119,6 +119,10 @@ sig
     val not_implemented: string option -> t
     (** Code is [501 NOT IMPLEMENTED]. The server cannot carry out the request, possibly
         because the functionality is not yet implemented. *)
+
+    val service_unavailable: string option -> t
+    (** Code is [503 SERVICE UNAVAILABLE]. The server is currently unavailable (because 
+        it is overloaded or down for maintenance) Generally, this is a temporary state. *)
 end
 
 
