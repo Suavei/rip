@@ -97,6 +97,7 @@ struct
     let too_many_requests body = (Response.make ~status:`Too_many_requests (), body)
     let internal_server_error body = (Response.make ~status:`Internal_server_error (), body)
     let not_implemented body = (Response.make ~status:`Not_implemented (), body)
+    let service_unavailable body = (Response.make ~status:`Service_unavailable (), body)
 end
 
 
